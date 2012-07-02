@@ -7,14 +7,12 @@
 - If the macro files import an other python file that file needs to put into /python dir. I used a lot of utils.py file so put it in /python/utils.py
 
 
-# Media
+# Static Files
 
 - copy media -> media
-
-
-# Images
-
+- Copy scripts -> scripts
 - Copy images -> images
+- Copy masterpages -> masterpages
 
 
 # Web.config
@@ -29,17 +27,6 @@
 - It now installs at /ImageGen.ashx and not in /umbraco/ImageGen.ashx. So remove /umbraco from /umbraco/ImageGen.ashx in macros
 
 
-# Javascript
-
-- Copy scripts -> scripts
-
-
-# Masterpages
-
-- Copy masterpages -> masterpages
-
-
 # ClientDependency (less/js) minification/parsing
 
 - debug=false in web.config ( for some reason it didn't work locally with debug=true )
-
