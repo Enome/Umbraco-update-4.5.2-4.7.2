@@ -30,3 +30,34 @@
 # ClientDependency (less/js) minification/parsing
 
 - debug=false in web.config ( for some reason it didn't work locally with debug=true )
+
+# Less
+
+Download less.dll from http://www.dotlesscss.org/
+
+Add the following to web.config depending on what version of IIS6 you use. More info on [here](http://blog.mattbrailsford.com/2010/08/12/using-dotless-and-the-client-dependency-framework-in-umbraco/)
+
+IIS6
+
+```xml
+<configuration>
+ <system.web>
+ <httpHandlers>
+ <add verb="*" path="*.less" type="dotless.Core.LessCssHttpHandler, dotless.Core" validate="false" />
+ </httpHandlers>
+ </system.web>
+</configuration>
+```
+
+IIS7
+
+```xml
+<configuration>
+ <system.webServer>
+ <handlers>
+ <remove name="DotLessCss" />
+ <add name="DotLessCss" verb="*" path="*.less" type="dotless.Core.LessCssHttpHandler, dotless.Core" preCondition="integratedMode" />
+ </handlers>
+ </system.webServer>
+</configuration>
+```
