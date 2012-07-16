@@ -33,9 +33,7 @@
 
 # Less
 
-Download less.dll from http://www.dotlesscss.org/
-
-Add the following to web.config depending on what version of IIS6 you use. More info on [here](http://blog.mattbrailsford.com/2010/08/12/using-dotless-and-the-client-dependency-framework-in-umbraco/)
+Download less.dll from http://www.dotlesscss.org/ and dd the following to web.config depending on what version of IIS6 you use. More info [here](http://blog.mattbrailsford.com/2010/08/12/using-dotless-and-the-client-dependency-framework-in-umbraco/)
 
 IIS6
 
