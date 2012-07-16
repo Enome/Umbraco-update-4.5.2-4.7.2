@@ -4,12 +4,12 @@
 - Download "Support for IronPython/IronRuby macros"
 - Copy everything to bin except for the ruby stuff
 - Copy Python files to -> MacroScripts
-- If the macro files import an other python file that file needs to put into /python dir. I used a lot of utils.py file so put it in /python/utils.py
+- If the macro files import an other python file that file needs to put into /python dir. I used utils.py file a lot so put it in /python/utils.py
 
 
 # Static Files
 
-- copy media -> media
+- Copy media -> media
 - Copy scripts -> scripts
 - Copy images -> images
 - Copy masterpages -> masterpages
